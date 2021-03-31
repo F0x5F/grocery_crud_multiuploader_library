@@ -1,6 +1,7 @@
 # Grocery Crud Multiuploader library
 Addon for Grocery CRUD library, select and load multiple files
-Tested CI v.3.x -> GC v.1.5.x
+
+# Tested CI v.3.x -> GC v.1.5.x
 
 ### Usage
 ```php 
@@ -31,4 +32,4 @@ $crud->new_multi_upload("files",$config);
 ```
 
 
-[1]:https://github.com/F0x5F/grocery_crud_multiuploader_library/blob/master/screenshots/screen_1.png
+[1]:https://github.com/F0x5F/grocery_crud_multiuploader_library/blob/main/screenshots/srcreen_1.png
