@@ -11,6 +11,16 @@ $crud->new_multi_upload(arg1,arg2);
 ```
 
 ```php 
+class Your_class extends CI_Controller {
+
+function __construct()
+{
+	parent::__construct();
+	$this->load->database();
+	$this->load->library('grocery_CRUD');
+    	$this->load->library('Grocery_CRUD_Multiuploader');
+}
+
 /* Upload field configuration, path, allowed type etc */
 $config = array(
 		    /* Destination directory */
@@ -25,8 +35,8 @@ $config = array(
 		     "enable_full_path"        => false,
 		    /* Download button will appear during read state */
 		    "enable_download_button"  => true,
-			/* show download button only for this types...*/
-			"download_allowed"        => 'jpg' 		
+		    /* show download button only for this types...*/
+		    "download_allowed"        => 'jpg' 		
 			);
 $crud->new_multi_upload("files",$config);
 ```
